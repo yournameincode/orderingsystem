@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: menu #对应的配置文件名称
+  #      label: master #git仓库分支名
+  cloud:
+    config:
+      uri: http://localhost:3344

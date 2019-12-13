@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: zuul
+  profiles:
+    active: dev
+  cloud:
+    config:
+      uri: http://localhost:3344
+zuul:
+  ignored-services: "*"
+  prefix: /lqp
+  routes:
+    client:
+      url: http://localhost:8030/
+      path: /wys/**
+    static:
+      url: http://localhost:8030/static/
+      path: /static/**
+
+
+
+
+

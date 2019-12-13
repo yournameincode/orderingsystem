@@ -1,0 +1,18 @@
+server:
+  port: 8030
+spring:
+  application:
+    name: clientfeign
+  thymeleaf:
+    prefix: classpath:/static/
+    suffix: .html
+  main:
+    allow-bean-definition-overriding: true
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    prefer-ip-address: true
+
+#    spring.main.allow-bean-definition-overriding: true

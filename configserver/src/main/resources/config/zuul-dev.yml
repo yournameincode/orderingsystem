@@ -1,0 +1,18 @@
+server:
+  port: 8815
+spring:
+  application:
+    name: zuul
+eureka:
+  client:
+    instance:
+      instance-id: zuul
+      prefer-ip-address: true
+
+
+
+info:
+    app.name: order
+    company.name: com.wys
+    build.artifactId: $project.artifactId$
+    build.version: $project.version$
