@@ -10,6 +10,12 @@ spring:
       uri: http://localhost:3344
 
 
+feign:
+  hystrix:
+    enabled: true
+
+
+
 management:
   endpoints:
     web:
